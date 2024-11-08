@@ -39,10 +39,9 @@ const FaqItem = ({ question, answer, icon }) => {
                     {icon}
                 </span>
             </button>
-            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
                 <p className="px-4 pb-4 text-gray-400">{answer}</p>
             </div>
-
         </div >
     );
 };
