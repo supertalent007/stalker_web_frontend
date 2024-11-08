@@ -5,7 +5,7 @@ const SubSection = ({ subSection, order }) => {
     return (
         <div className='grid md:grid-cols-2 gap-[50px] py-[50px] items-center md:px-[50px] sm:px-[15px] w-full'>
             <div className={`col-span-1 justify-center flex ${order % 2 === 1 ? 'order-1 md:order-2' : 'order-1'}`}>
-                <img className="max-h-[530px]" src={subSection?.imageUrl} alt="sub section" />
+                <img className="max-h-[530px]" src={subSection?.imageUrl} alt="sub section" loading="lazy" />
             </div>
 
             <div className={`col-span-1 max-w-[500px] justify-center flex flex-col ${order % 2 === 1 ? 'order-1' : 'order-2'}`}>
