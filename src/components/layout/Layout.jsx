@@ -9,7 +9,7 @@ const Layout = () => {
             <div className="flex flex-col min-h-screen bg-black max-w-[1440px] justify-center mx-auto">
                 <Header />
 
-                <main className="flex-grow p-4 pt-[calc(4rem+8px)]">
+                <main className="flex-grow p-4 pt-[120px]">
                     <Outlet />
                 </main>
 

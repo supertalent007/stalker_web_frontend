@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName }) => {
+const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName, setStep, setSubscription, appType }) => {
     const getLink = (buttonName) => {
         if (buttonName) {
             if (buttonName === 'Subscribe') {
@@ -9,6 +9,15 @@ const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName }) => 
             }
             if (buttonName === 'View Details') {
                 return `/membership/${subscriptionData?.membership}`;
+            }
+        }
+    }
+
+    const handleLink = () => {
+        if (buttonName) {
+            if (buttonName === 'Subscribe') {
+                setStep(3);
+                setSubscription(subscriptionData);
             }
         }
     }
@@ -49,9 +58,27 @@ const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName }) => 
                         })
                     }
                 </ul>
-                <Link to={getLink(buttonName)} className="flex justify-center border rounded-[5px] py-2 mt-auto mb-0 hover:bg-primary hover:text-black transition-colors duration-300">
-                    {buttonName}
-                </Link>
+                {
+                    buttonName && !appType ?
+                        <Link
+                            to={getLink(buttonName)}
+                            className="flex justify-center border rounded-[5px] py-2 mt-auto mb-0 hover:bg-primary hover:text-black transition-colors duration-300"
+                            onClick={handleLink}
+                        >
+                            {buttonName}
+                        </Link> : ''
+                }
+                {
+                    appType ?
+                        <div className='px-[40px] py-[15px] bg-[#111] rounded-[15px]'>
+                            {
+                                appType === 'android' && <img src="/assets/buttons/android.png" alt="android app" />
+                            }
+                            {
+                                appType === 'ios' && <img src="/assets/buttons/ios.png" alt="ios app" />
+                            }
+                        </div> : ""
+                }
             </div>
         </div>
     )
