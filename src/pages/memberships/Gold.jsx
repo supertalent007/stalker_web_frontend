@@ -9,22 +9,23 @@ const GoldPlan = () => {
         <div className="container mx-auto text-primary relative">
             <div className='relative'>
                 <div className="grid md:grid-cols-2 relative z-30">
-                    <div className="col-span-2 md:col-span-1 mt-[100px]">
+                    <div className="col-span-2 md:col-span-1 mt-[50px] md:mt-[100px] order-2 md:order-1">
                         <p className="font-[russo] text-3xl md:text-5xl lg:text-[60px] leading-tight mb-1">
                             Gold
                         </p>
                         <p className="font-[russo] text-3xl md:text-5xl lg:text-[60px] leading-tight mb-1">
                             Plan
                         </p>
-                        <img className="mt-[120px] relative z-[21]" src="/assets/images/header_flow.png" alt="Header Flow" />
+
+                        <img className="mt-[30px] md:mt-[120px] relative z-[21]" src="/assets/images/header_flow.png" alt="Header Flow" />
                     </div>
 
-                    <div className="col-span-2 md:col-span-1 flex justify-center items-center relative mt-10 md:mt-0 overflow-hidden">
+                    <div className="col-span-2 md:col-span-1 flex justify-center items-center relative mt-10 md:mt-0 overflow-hidden order-1 md:order-2">
                         <img className="z-30 w-[350px] md:w-full" src="/assets/images/phone_gold.png" alt="Phone group 1" />
                     </div>
                 </div>
 
-                <span className="absolute inset-0 flex justify-center items-center font-[russo] opacity-[20%] z-10 pointer-events-none whitespace-nowrap text-[60px] sm:text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px]">
+                <span className="absolute translate-y-[35%] md:translate-y-[0%] inset-0 flex justify-center items-center font-[russo] opacity-[20%] z-10 pointer-events-none whitespace-nowrap text-[80px] sm:text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px]">
                     S-TALKER
                 </span>
             </div>

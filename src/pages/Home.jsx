@@ -9,9 +9,15 @@ const Home = () => {
         <div className="container mx-auto text-primary relative">
             <div className='relative'>
                 <div className="grid md:grid-cols-2 relative z-30">
-                    <div className="col-span-2 md:col-span-1 mt-[50px]">
+                    <div className="col-span-2 md:col-span-1 mt-[50px] order-2 md:order-1">
+                        <p className="font-[russo] text-3xl md:text-5xl lg:text-[60px] leading-tight">
+                            Welcome to Stalker:
+                        </p>
+                        <p className="font-[russo] text-3xl md:text-5xl lg:text-[60px] leading-tight">
+                            Your Secure
+                        </p>
                         <p className="font-[russo] text-3xl md:text-5xl lg:text-[60px] leading-tight mb-6">
-                            Welcome to Stalker: Your Secure Messaging Solution
+                            Messaging Solution
                         </p>
                         <p className="font-inter text-sm md:text-base text-secondary z-[21] relative">
                             Meet Stalker, the most reliable way to protect your privacy in the digital world.
@@ -20,12 +26,12 @@ const Home = () => {
                         <button className="relative mt-10 px-5 py-3 rounded-xl bg-gray-100 text-black hover:bg-secondary text-sm md:text-base z-[21]">
                             Get Started
                         </button>
-                        <img className="mt-[120px] relative z-[21]" src="/assets/images/header_flow.png" alt="Header Flow" />
+                        <img className="mt-[30px] md:mt-[120px] relative z-[21]" src="/assets/images/header_flow.png" alt="Header Flow" />
                     </div>
 
-                    <div className="col-span-2 md:col-span-1 flex justify-center items-center relative mt-10 md:mt-0 overflow-hidden">
+                    <div className="col-span-2 md:col-span-1 flex justify-center items-center relative mt-10 md:mt-0 overflow-hidden order-1 md:order-2">
                         <img className="z-30 w-[350px] md:w-full" src="/assets/images/phone1.png" alt="Phone 1" />
-                        <img className="ml-[-300px] md:ml-[-400px] z-20 w-[350px] md:w-full" src="/assets/images/phone2.png" alt="Phone 2" />
+                        <img className="ml-[-300px] md:ml-[-400px] z-[19] w-[350px] md:w-full" src="/assets/images/phone2.png" alt="Phone 2" />
                         <img className="ml-[-300px] md:ml-[-400px] z-10 w-[350px] md:w-full" src="/assets/images/phone3.png" alt="Phone 3" />
                     </div>
                     <div className="absolute z-20 w-full mt-[280px]">
@@ -33,7 +39,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <span className="absolute inset-0 flex justify-center items-center font-[russo] opacity-[20%] z-10 pointer-events-none whitespace-nowrap text-[60px] sm:text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px]">
+                <span className="absolute translate-y-[20%] md:translate-y-[0%] inset-0 flex justify-center items-center font-[russo] opacity-[20%] z-10 pointer-events-none whitespace-nowrap text-[80px] sm:text-[80px] md:text-[150px] lg:text-[200px] xl:text-[250px]">
                     S-TALKER
                 </span>
             </div>

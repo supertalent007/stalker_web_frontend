@@ -6,6 +6,7 @@ import StandardPlan from '../pages/memberships/Standard';
 import GoldPlan from '../pages/memberships/Gold';
 import PlatinumPlan from '../pages/memberships/Platinum';
 import Pricing from '../pages/Pricing';
+import About from '../pages/About';
 
 const AppRouter = () => {
     return (
@@ -21,6 +22,9 @@ const AppRouter = () => {
                 </Route>
                 <Route path="/pricing" element={<Layout />} >
                     <Route index element={<Pricing />} />
+                </Route>
+                <Route path="/about" element={<Layout />} >
+                    <Route index element={<About />} />
                 </Route>
             </Routes>
         </Router>

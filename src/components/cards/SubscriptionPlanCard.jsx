@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SubscriptionPlanCard = ({ subscriptionData, customClass }) => {
     return (
-        <div className={"col-span-1 p-5 flex flex-col bg-[#0c0c0c] text-black rounded-[20px] max-w-[450px] " + (customClass ? customClass : '')}>
+        <div className={"col-span-1 p-5 flex flex-col bg-[#222] text-black rounded-[20px] max-w-[450px] " + (customClass ? customClass : '')}>
             <div className="p-[30px] bg-black text-primary rounded-[20px]">
                 <h3 className="text-[29px] leading-[35px] tracking-[0%] font-[russo] mb-5">{subscriptionData?.name}</h3>
 
@@ -30,7 +30,7 @@ const SubscriptionPlanCard = ({ subscriptionData, customClass }) => {
                                     <span className='transform transition-transform'>
                                         {service?.icon}
                                     </span>
-                                    <p className="text-[#4B5563]">
+                                    <p className="text-[#999]">
                                         {service?.name}
                                     </p>
                                 </li>
