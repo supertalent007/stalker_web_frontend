@@ -8,6 +8,7 @@ import PlatinumPlan from '../pages/memberships/Platinum';
 import Pricing from '../pages/Pricing';
 import About from '../pages/About';
 import Register from '../pages/auth/Register';
+import Login from '../pages/auth/Login';
 
 const AppRouter = () => {
     return (
@@ -29,6 +30,9 @@ const AppRouter = () => {
                 </Route>
                 <Route path="/register" element={<Layout />}>
                     <Route index element={<Register />} />
+                </Route>
+                <Route path="/login" element={<Layout />}>
+                    <Route index element={<Login />} />
                 </Route>
             </Routes>
         </Router>
