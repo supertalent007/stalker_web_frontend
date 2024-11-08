@@ -2,7 +2,6 @@ import React from 'react';
 import '../index.css';
 import FaqSection from '../components/Faq';
 import SubSection from '../components/SubSection';
-import StarterSubscriptionPlans from '../components/subscriptions/StarterSubscription';
 import SubscriptionPlans from '../components/subscriptions/Subscription';
 
 const About = () => {

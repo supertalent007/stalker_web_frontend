@@ -1,7 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SubscriptionPlanCard = ({ subscriptionData, customClass }) => {
+const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName }) => {
+    const getLink = (buttonName) => {
+        if (buttonName) {
+            if (buttonName === 'Subscribe') {
+                return '#';
+            }
+            if (buttonName === 'View Details') {
+                return `/membership/${subscriptionData?.membership}`;
+            }
+        }
+    }
+
     return (
         <div className={"col-span-1 p-5 flex flex-col bg-[#222] text-black rounded-[20px] max-w-[450px] " + (customClass ? customClass : '')}>
             <div className="p-[30px] bg-black text-primary rounded-[20px]">
@@ -38,8 +49,8 @@ const SubscriptionPlanCard = ({ subscriptionData, customClass }) => {
                         })
                     }
                 </ul>
-                <Link to={subscriptionData?.link} className="flex justify-center border rounded-[5px] py-2 mt-auto mb-0 hover:bg-primary hover:text-black transition-colors duration-300">
-                    {subscriptionData?.buttonName}
+                <Link to={getLink(buttonName)} className="flex justify-center border rounded-[5px] py-2 mt-auto mb-0 hover:bg-primary hover:text-black transition-colors duration-300">
+                    {buttonName}
                 </Link>
             </div>
         </div>

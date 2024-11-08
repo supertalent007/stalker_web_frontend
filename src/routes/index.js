@@ -7,6 +7,7 @@ import GoldPlan from '../pages/memberships/Gold';
 import PlatinumPlan from '../pages/memberships/Platinum';
 import Pricing from '../pages/Pricing';
 import About from '../pages/About';
+import Register from '../pages/auth/Register';
 
 const AppRouter = () => {
     return (
@@ -25,6 +26,9 @@ const AppRouter = () => {
                 </Route>
                 <Route path="/about" element={<Layout />} >
                     <Route index element={<About />} />
+                </Route>
+                <Route path="/register" element={<Layout />}>
+                    <Route index element={<Register />} />
                 </Route>
             </Routes>
         </Router>
