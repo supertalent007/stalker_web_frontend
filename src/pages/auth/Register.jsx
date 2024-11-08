@@ -126,7 +126,7 @@ const ChoosePlan = ({ setPlan, subscriptions, appType, setStep, setSubscription 
 const FinalRegistration = ({ subscription, appType }) => {
     return (
         <div className="flex flex-col items-center justify-center w-full text-primary gap-[30px]">
-            <h1 className="font-[russo] text-[50px] text-primary text-center">Choose Your Plan</h1>
+            <h1 className="font-[russo] text-[50px] text-primary text-center">{subscription?.name} / Register</h1>
             <div className='grid md:grid-cols-2 gap-5'>
                 <SubscriptionPlanCard
                     subscriptionData={subscription}
