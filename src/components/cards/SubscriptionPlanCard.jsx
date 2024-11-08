@@ -70,7 +70,7 @@ const SubscriptionPlanCard = ({ subscriptionData, customClass, buttonName, setSt
                 }
                 {
                     appType ?
-                        <div className='px-[40px] py-[15px] bg-[#111] rounded-[15px]'>
+                        <div className='px-[40px] py-[15px] bg-[#111] rounded-[15px] flex justify-center'>
                             {
                                 appType === 'android' && <img src="/assets/buttons/android.png" alt="android app" />
                             }
